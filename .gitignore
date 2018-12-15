@@ -5,3 +5,6 @@
 bin
 build
 !gradle-wrapper.jar
+.project
+.classpath
+lwjgl_test.iml
