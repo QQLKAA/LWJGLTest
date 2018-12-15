@@ -1,0 +1,28 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName = 'pl.qqlka.gametest.App'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.lwjgl:lwjgl:3.2.0'
+    compile 'org.lwjgl:lwjgl-opengl:3.2.0'
+    compile 'org.lwjgl:lwjgl-glfw:3.2.0'
+
+    compile 'org.lwjgl:lwjgl:3.2.0:natives-windows'
+    compile 'org.lwjgl:lwjgl-opengl:3.2.0:natives-windows'
+    compile 'org.lwjgl:lwjgl-glfw:3.2.0:natives-windows'
+
+    compile 'org.lwjgl:lwjgl:3.2.0:natives-linux'
+    compile 'org.lwjgl:lwjgl-opengl:3.2.0:natives-linux'
+    compile 'org.lwjgl:lwjgl-glfw:3.2.0:natives-linux'
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'pl.qqlka.gametest.App'
+    }
+}
