@@ -11,15 +11,6 @@ public class App {
         while(!window.shouldClose()) {
             window.clear(0.5f, 0.5f, 0.1f, 1.0f);
 
-            GL11.glBegin(GL11.GL_TRIANGLES);
-
-            GL11.glColor3f(1.0f, 1.0f, 1.0f);
-            GL11.glVertex2f(-0.5f, -0.5f);
-            GL11.glVertex2f(0.5f, -0.5f);
-            GL11.glVertex2f(0.5f, 0.5f);
-
-            GL11.glEnd();
-
             window.update();
         }
 
